@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Development Assessment 1 - Public Market Vendor Registration</title>
+    <link rel="stylesheet" href="style.css"> 
+</head>
+
+<header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#register">Register</a></li>
+                <li><a href="#login">Log In</a></li>
+            </ul>
+        </nav>
+</header>
+
+    <h1>Barangay Sta. Clara Public Market Vendor Registration</h1>
+    <div class="vendor-image-container">
+        <img id="vendorimg" src="images/vendor.jpg" alt="Vendor Image">
+    </div>
+
+<body>
+    <div id="vendorInformation">
+        <div id="vendor">
+            <h3>Vendor Information</h3>
+        </div>
+        <form id="vendorInfoForm">
+                <label for="fname">First Name:</label>
+                <input type="text" id="fname" name="fname" value="">
+            
+                <label for="lname">Last Name:</label>
+                <input type="text" id="lname" name="lname" value=""><br> 
+
+                <label for="age"> Age: </label>
+                <input type="text" id="age" name="age" value="">
+
+                <label for="gender"> Gender: </label>
+                <input type="radio" id="gender" name="gender"> Female
+                <input type="radio" id="gender" name="gender"> Male
+                <input type="radio" id="gender" name="gender"> Non-binary<br>
+
+                <label for="contact"> Contact Number: </label>
+                <input type="tel" id="contact" name="contact" placeholder="e.g., 09123456789"><br>
+                
+                <label for="address"> Address: </label>
+                <input type="text" id="address" name="address" value="">
+        </form>
+    </div>
+
+    <div id="businessInformation">
+        <div id="business">
+            <h3>Business Information</h3>
+        </div>
+        <form id="businessInfoForm">
+            <label for="businessName"> Business Name: </label>
+            <input type="text" id="businessName" name="businessName" value="">
+
+            <label for="permitNumber"> Permit number: </label>
+            <input type="text" id="permitNumber"placeholder="e.g., MPM-2024-00123" name="permitNumber"><br>
+
+            <label for="operationYears"> Years in operation: </label>
+            <select id="operationYears" name="operationYears">
+                <option value="0-12 months"> 0-12 months </option>
+                <option value="1-5 years"> 1-5 years </option>
+                <option value="5-10 years"> 5-10 years </option>
+                <option value="more than 10 years"> more than 10 Years </option>
+            </select><br>
+
+            <label for="productType">Choose product type:</label>
+                <select id="productType" name="productType">
+                    <option value="Vegetables"> Vegetables </option>
+                    <option value="Fruits"> Fruits </option>
+                    <option value="Meat"> Meat </option>
+                    <option value="Seafood"> Seafod </option>
+                    <option value="Rice & Grains"> Rice and Grains </option>
+                    <option value="Rice & Grains"> Delicacies </option>
+                    <option value="Kakanin"> Clothes </option>
+                    <option value="Household Items"> Household Items </option>
+                </select><br>
+
+            <label for="operationDays"> Operating days: </label>
+                <input type="checkbox" name="operationDays" value="operationDays"> Monday
+                <input type="checkbox" name="operationDays" value="operationDays"> Tuesday
+                <input type="checkbox" name="operationDays" value="operationDays"> Wednesday
+                <input type="checkbox" name="operationDays" value="operationDays"> Thursday
+                <input type="checkbox" name="operationDays" value="operationDays"> Friday
+                <input type="checkbox" name="operationDays" value="operationDays"> Saturday
+                <input type="checkbox" name="operationDays" value="operationDays"> Sunday
+                <br>
+        </form>
+    </div>
+
+    <div id="sanitationAndCompliance">
+        <div id="compliance">
+            <h3> Sanitation & Compliance </h3>
+        </div>
+        <form id="complianceForm">
+            <label for="sanitryPractices"> Sanitary Practices: </label>
+                <input type="radio" name="sanitryPractices" value="sanitryPractices"> Good
+                <input type="radio" name="sanitryPractices" value="sanitryPractices"> Fair
+                <input type="radio" name="sanitryPractices" value="sanitryPractices"> Poor
+                <br>
+
+            <label for="stallCleanliness"> Stall Cleanlines: </label>
+                <input type="checkbox" name="stallCleanliness" value="stallCleanliness"> Daily Cleaning 
+                <input type="checkbox" name="stallCleanliness" value="stallCleanliness"> Proper Waste Segregation & Disposal
+                <input type="checkbox" name="stallCleanliness" value="stallCleanliness"> Drainage Maintenance
+                <br>
+
+            <label for="hygieneGear"> Hygiene Gear </label>
+                <input type="checkbox" name="hygieneGear" value="hygieneGear"> Apron
+                <input type="checkbox" name="hygieneGear" value="hygieneGear"> Gloves
+                <input type="checkbox" name="hygieneGear" value="hygieneGear"> Hairnet
+                <input type="checkbox" name="hygieneGear" value="hygieneGear"> Shoe Cover
+                <br>
+        </form>
+    </div>
+
+    <div id="submit">
+        <input type="submit" name="submitRegistration" value="Submit Registration"><br>
+    </div>
+    
+    <hr> 
+    <div id="registeredVendors">
+        <h1> Registered Vendors </h2>
+        <table id="registeredVendorsTable" border="1">
+            <div id="export">
+                <input type="button" name="export" value="Export to Excel">
+            </div>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Gender</th>
+                <th>Address</th>
+                <th>Contact</th>
+                <th>Business Name</th>
+                <th>Permit Number</th>
+                <th>Years in Operation</th>
+                <th>Operating Days</th>
+                <th>Product Type</th>
+                <th>Sanitary Practices</th>
+                <th>Stall Cleanliness</th>
+                <th>Hygiene Gear</th>
+            </tr>
+
+            <tr>
+                <td> Margarita </td>
+                <td> Balajadia </td>
+                <td> 19 </td>
+                <td> Female </td>
+                <td> Lagundi, Morong, Rizal </td>
+                <td> 09181293410 </td>
+                <td> Marga's Pinoy Kakanin </td>
+                <td> MPM-2024-1234 </td>
+                <td> 0-12 months </td>
+                <td> Tuesday, Friday </td>
+                <td> Delicacies </td>
+                <td> Good </td>
+                <td> Daily Cleaning </td>
+                <td> Gloves </td>
+            </tr>
+
+            <tr>
+                <td> Claire </td>
+                <td> Cottrill </td>
+                <td> 26 </td>
+                <td> Female </td>
+                <td> San Juan, Morong, Rizal </td>
+                <td> 09271456175 </td>
+                <td> Fresh Fruits </td>
+                <td> MPM-2024-0198 </td>
+                <td> 1-5 years </td>
+                <td> Wednesday, Friday </td>
+                <td> Fruits </td>
+                <td> Good </td>
+                <td> Proper Waste Segregation & Disposal </td>
+                <td> Apron </td>
+            </tr>   
+        </table>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,221 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+h1{
+    text-align: center;
+    color: #2c3e50;
+}
+
+#vendor, #business, #compliance {
+    background-color: transparent;
+    margin: 20px auto;
+    max-width: 840px;
+    justify-content: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    text-align: left;
+    color: #2c3e50;
+}
+
+/*header*/
+header nav {
+    background-color: #2c3e50;
+    border-radius: 8px;
+    padding: 20px 0;
+    text-align: right;
+}
+
+header nav ul {
+    list-style: none;
+    text-align: right;
+    margin: 0 25px;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+    gap: 30px;
+}
+
+header nav ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+header nav ul li a:hover {
+    text-decoration: underline;
+    color: #dbdfe1;
+}
+
+/*image*/
+img#vendorimg {
+    display: block;
+    margin: 0 auto 20px auto;
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    border: 2px solid #ddd;
+}
+
+/*form content*/
+form {
+    background-color: #fff;
+    padding: 20px;
+    margin: 20px auto;
+    border-radius: 8px;
+    max-width: 800px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+}
+
+/*form label*/
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+    text-align: left;
+    color: #555;
+}
+
+/*input boxes*/
+input[type="text"],
+input[type="tel"],
+select {
+    width: calc(100% - 16px);
+    padding: 8px;
+    margin-top: 2px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+input[type="text"]:focus,
+input[type="tel"]:focus,
+select:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+    outline: none;
+}
+
+input[type="radio"],
+input[type="checkbox"] {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-right: 2px;
+    margin-left: 27px;
+    accent-color: #3498db;
+}
+
+/*buttons*/
+#submit{
+    background-color: transparent;
+    margin: 20px auto;
+    max-width: 860px;
+    justify-content: left;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: #2c3e50;
+}
+
+    input[type="submit"] {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+        margin: 10px 10px;
+        padding: 8px 20px;
+        font-weight: bold;
+        color: white;
+        background-color: #2c3e50;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+#export {
+    background-color: transparent;
+    margin: 20px auto;
+    max-width: 100%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+    color: #2c3e50;
+    display: flex;
+    justify-content: right;
+
+}
+
+    input[type="button"] {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        display: inline-block;
+        margin: 10px 5px;
+        align-items: end;
+        padding: 8px 20px;
+        font-weight: bold;
+        color: white;
+        background-color: #388e3c;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: 0.3s ease;
+    }
+
+input[type="submit"]:hover,
+input[type="button"]:hover {
+    background-color: #1c5980;
+}
+
+hr {
+    background-color: #2c3e50; 
+    padding: 2px;
+    margin: 2%;
+}
+
+/*table*/
+#registeredVendors {
+    margin: 40px auto;
+    text-size-adjust: 10%;
+    max-width: 100%;
+}
+
+#registeredVendorsTable {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 13px;
+    overflow: hidden;
+}
+
+#registeredVendorsTable th{
+    padding: 12px;
+    text-align: center;
+    border: 1px solid #ddd;
+    background-color: #2c3e50;
+    color: white;
+}
+#registeredVendorsTable td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #eee;
+    color: #555;
+}
+
+#registeredVendorsTable tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
